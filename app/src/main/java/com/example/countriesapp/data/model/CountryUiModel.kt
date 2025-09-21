@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class CountryUiModel(
     val name: String,
     val capital: String,
-    val region: String,
+    val region: String?,
     val flagUrl: String,
     val population: Long,
     val languages: String,

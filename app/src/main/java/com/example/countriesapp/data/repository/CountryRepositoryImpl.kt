@@ -10,7 +10,7 @@ class CountryRepositoryImpl(
         return api.getCountries().map { dto ->
             CountryUiModel(
                 name = dto.name.common,
-                region = dto.region,
+                region = dto.region ?: "N/A",
                 population = dto.population,
                 flagUrl = dto.flags.png,
                 capital = dto.capital?.firstOrNull() ?: "N/A",

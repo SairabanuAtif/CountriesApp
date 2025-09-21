@@ -5,7 +5,7 @@ data class CountryDto(
     val name: Name,
     val currencies: Map<String, Currency>,
     val capital: List<String>,
-    val region: String,
+    val region: String?,
     val languages: Map<String, String>,
     val population: Long,
     val timezones: List<String>
