@@ -28,9 +28,6 @@ private val LightColorScheme = lightColorScheme(
     onBackground = Color.Black,
     surface = Color.White,
     onSurface = Color.Black,
-//    primary = Purple40,
-//    secondary = PurpleGrey40,
-//    tertiary = Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -46,8 +43,6 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun CountriesAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
