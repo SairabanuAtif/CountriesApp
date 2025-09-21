@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Country Explorer</string>
+    <string name="no_countries_found">No countries found</string>
+    <string name="app_icon">app_icon</string>
+    <string name="filter_icon">filter_icon</string>
+    <string name="empty_icon">empty_icon</string>
+    <string name="error_icon">error_icon</string>
+    <string name="Error_message">Something went wrong</string>
+    <string name="search_countries">Search countries</string>
+    <string name="empty_screen_message">No countries found for your search</string>
+    <string name="region_label">Region:&#160;</string>
+    <string name="population_label">Population: %1$s</string>
+    <string name="all">All</string>
+    <string name="retry">Retry</string>
+    <string name="back">Back</string>
+    <string name="capital_city">Capital City</string>
+    <string name="official_languages">Official Languages</string>
+    <string name="currencies">Currencies</string>
+    <string name="timezones">Timezones</string>
 </resources>

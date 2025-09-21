@@ -28,7 +28,7 @@ class CountryListViewModel(
         fetchCountries()
     }
 
-    private fun fetchCountries() {
+    fun fetchCountries() {
         viewModelScope.launch {
             try {
                 _countries.value = UiState.Loading()
@@ -47,6 +47,7 @@ class CountryListViewModel(
     fun onRegionFilterChange(region: String?) {
         _regionFilter.value = region
     }
+
     fun getFilteredCountries(): List<CountryUiModel> {
         val allCountries = (_countries.value as? UiState.Success)?.data ?: emptyList()
         val filteredBySearch = allCountries.filter {

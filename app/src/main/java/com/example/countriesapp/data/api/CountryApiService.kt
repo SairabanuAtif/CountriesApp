@@ -1,5 +1,6 @@
 package com.example.countriesapp.data.api
 
+import com.example.countriesapp.data.model.CountryDto
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit

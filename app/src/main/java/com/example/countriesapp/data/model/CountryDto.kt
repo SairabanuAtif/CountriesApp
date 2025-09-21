@@ -1,4 +1,4 @@
-package com.example.countriesapp.data.api
+package com.example.countriesapp.data.model
 
 data class CountryDto(
     val flags: Flags,
@@ -11,24 +11,24 @@ data class CountryDto(
     val timezones: List<String>
 )
 
-data class Currency (
+data class Currency(
     val name: String,
     val symbol: String
 )
 
-data class Flags (
+data class Flags(
     val png: String,
     val svg: String,
     val alt: String
 )
 
-data class Name (
+data class Name(
     val common: String,
     val official: String,
     val nativeName: Map<String, NativeName>
 )
 
-data class NativeName (
+data class NativeName(
     val official: String,
     val common: String
 )

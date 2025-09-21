@@ -5,7 +5,7 @@ import com.example.countriesapp.data.model.CountryUiModel
 
 class CountryRepositoryImpl(
     private val api: CountryApiService
-): CountryRepository {
+) : CountryRepository {
     override suspend fun getCountries(): List<CountryUiModel> {
         return api.getCountries().map { dto ->
             CountryUiModel(
@@ -15,7 +15,8 @@ class CountryRepositoryImpl(
                 flagUrl = dto.flags.png,
                 capital = dto.capital?.firstOrNull() ?: "N/A",
                 languages = dto.languages?.values?.joinToString(", ") ?: "N/A",
-                currencies = dto.currencies?.values?.joinToString { "${it.name} (${it.symbol})" } ?: "N/A",
+                currencies = dto.currencies?.values?.joinToString { "${it.name} (${it.symbol})" }
+                    ?: "N/A",
                 timezones = dto.timezones.joinToString(", ")
             )
         }
